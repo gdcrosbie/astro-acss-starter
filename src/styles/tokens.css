@@ -1,50 +1,42 @@
 /**
  * Automatic.css (ACSS) 4.x Design Kit Tokens
  * Exported from SchemaWP on https://etch-design-kits.com/
- * Live Kit: Neubrutalist (Kit ID: 12)
+ * Live Kit: Astro Default (Kit ID: 34)
  * Export Date: 2026-09-07
  * ACSS Version: 4.0.1 | SchemaWP Version: 1.3.0
  */
 
-/* File: automatic-variables.css - Version: 4.0.1 - Generated: 2026-09-07 10:34:21 */
+/* File: automatic-variables.css - Version: 4.0.1 - Generated: 2026-09-07 18:14:10 */
 /* Feat: Text, Headings, & Spacing */
 :root {
   --root-font-size: 100%;
 }
 /* Feat: Palette */
 :root {
-  --primary: light-dark(oklch(0.547 0.25 265.8), oklch(0.547 0.25 265.8));
-  --primary-hover: light-dark(oklch(0.405 0.25 265.8), oklch(0.405 0.25 265.8));
-  --primary-ultra-light: light-dark(oklch(0.97 0.03 265.8), oklch(0.1 0.25 265.8));
-  --primary-ultra-dark: light-dark(oklch(0.1 0.25 265.8), oklch(0.97 0.03 265.8));
-  --primary-light: light-dark(oklch(0.85 0.25 265.8), oklch(0.25 0.25 265.8));
-  --primary-dark: light-dark(oklch(0.25 0.25 265.8), oklch(0.85 0.25 265.8));
-  --primary-semi-light: light-dark(oklch(0.65 0.25 265.8), oklch(0.35 0.25 265.8));
-  --primary-semi-dark: light-dark(oklch(0.35 0.25 265.8), oklch(0.65 0.25 265.8));
-  --secondary: light-dark(oklch(0.875 0.179 92.7), oklch(0.875 0.179 92.7));
-  --secondary-hover: light-dark(oklch(0.648 0.179 92.7), oklch(0.648 0.179 92.7));
-  --secondary-ultra-light: light-dark(oklch(0.95 0.179 92.7), oklch(0.1 0.179 92.7));
-  --secondary-ultra-dark: light-dark(oklch(0.1 0.179 92.7), oklch(0.95 0.179 92.7));
-  --secondary-light: light-dark(oklch(0.85 0.179 92.7), oklch(0.25 0.179 92.7));
-  --secondary-dark: light-dark(oklch(0.25 0.179 92.7), oklch(0.85 0.179 92.7));
-  --secondary-semi-light: light-dark(oklch(0.65 0.179 92.7), oklch(0.35 0.179 92.7));
-  --secondary-semi-dark: light-dark(oklch(0.35 0.179 92.7), oklch(0.65 0.179 92.7));
-  --accent: light-dark(oklch(0.74 0.126 200.7), oklch(0.74 0.126 200.7));
-  --accent-hover: light-dark(oklch(0.548 0.126 200.7), oklch(0.548 0.126 200.7));
-  --accent-ultra-light: light-dark(oklch(0.95 0.126 200.7), oklch(0.1 0.126 200.7));
-  --accent-ultra-dark: light-dark(oklch(0.1 0.126 200.7), oklch(0.95 0.126 200.7));
-  --accent-light: light-dark(oklch(0.85 0.126 200.7), oklch(0.25 0.126 200.7));
-  --accent-dark: light-dark(oklch(0.25 0.126 200.7), oklch(0.85 0.126 200.7));
-  --accent-semi-light: light-dark(oklch(0.65 0.126 200.7), oklch(0.35 0.126 200.7));
-  --accent-semi-dark: light-dark(oklch(0.35 0.126 200.7), oklch(0.65 0.126 200.7));
-  --base: light-dark(oklch(0.145 0 89.9), oklch(0.145 0 89.9));
-  --base-hover: light-dark(oklch(0.3 0 89.9), oklch(0.3 0 89.9));
-  --base-ultra-light: light-dark(oklch(0.95 0 89.9), oklch(0.1 0 89.9));
-  --base-ultra-dark: light-dark(oklch(0.1 0 89.9), oklch(0.95 0 89.9));
-  --base-light: light-dark(oklch(0.85 0 89.9), oklch(0.25 0 89.9));
-  --base-dark: light-dark(oklch(0.25 0 89.9), oklch(0.85 0 89.9));
-  --base-semi-light: light-dark(oklch(0.65 0 89.9), oklch(0.35 0 89.9));
-  --base-semi-dark: light-dark(oklch(0.35 0 89.9), oklch(0.65 0 89.9));
+  --primary: light-dark(oklch(0.6598044961 0.1799254458 38.0445377894), oklch(0.6598044961 0.1799254458 38.0445377894));
+  --primary-hover: light-dark(oklch(0.759 0.18 38.0445377894), oklch(0.759 0.18 38.0445377894));
+  --primary-ultra-light: light-dark(oklch(0.95 0.033 38.0445377894), oklch(0.1 0.037 38.0445377894));
+  --primary-ultra-dark: light-dark(oklch(0.1 0.037 38.0445377894), oklch(0.95 0.033 38.0445377894));
+  --primary-light: light-dark(oklch(0.85 0.108 38.052769223), oklch(0.25 0.092 38.0445377894));
+  --primary-dark: light-dark(oklch(0.25 0.092 38.0445377894), oklch(0.85 0.108 38.052769223));
+  --primary-semi-light: light-dark(oklch(0.65 0.18 38.0445377894), oklch(0.35 0.129 38.0445377894));
+  --primary-semi-dark: light-dark(oklch(0.35 0.129 38.0445377894), oklch(0.65 0.18 38.0445377894));
+  --accent: light-dark(oklch(0.5383333333 0.1554743966 249), oklch(0.5383333333 0.1554743966 249));
+  --accent-hover: light-dark(oklch(0.619 0.155 249), oklch(0.619 0.155 249));
+  --accent-ultra-light: light-dark(oklch(0.95 0.027 248.9321883828), oklch(0.1 0.036 249));
+  --accent-ultra-dark: light-dark(oklch(0.1 0.036 249), oklch(0.95 0.027 248.9321883828));
+  --accent-light: light-dark(oklch(0.85 0.085 249), oklch(0.25 0.089 249.0107636303));
+  --accent-dark: light-dark(oklch(0.25 0.089 249.0107636303), oklch(0.85 0.085 249));
+  --accent-semi-light: light-dark(oklch(0.65 0.155 249), oklch(0.35 0.125 249.0107636303));
+  --accent-semi-dark: light-dark(oklch(0.35 0.125 249.0107636303), oklch(0.65 0.155 249));
+  --base: light-dark(oklch(0.23 0.046 34), oklch(0.23 0.046 34));
+  --base-hover: light-dark(oklch(0.265 0.046 34), oklch(0.265 0.046 34));
+  --base-ultra-light: light-dark(oklch(0.95 0.033 34), oklch(0.1 0.04 34));
+  --base-ultra-dark: light-dark(oklch(0.1 0.04 34), oklch(0.95 0.033 34));
+  --base-light: light-dark(oklch(0.85 0.046 34), oklch(0.25 0.046 34));
+  --base-dark: light-dark(oklch(0.25 0.046 34), oklch(0.85 0.046 34));
+  --base-semi-light: light-dark(oklch(0.65 0.046 34), oklch(0.35 0.046 34));
+  --base-semi-dark: light-dark(oklch(0.35 0.046 34), oklch(0.65 0.046 34));
   --neutral: light-dark(oklch(0 0 0), oklch(0 0 0));
   --neutral-hover: light-dark(oklch(0 0 0), oklch(0 0 0));
   --neutral-ultra-light: light-dark(oklch(0.95 0 0), oklch(0.1 0 0));
@@ -274,7 +266,6 @@
 :root {
   --option-primary-btn-outline: on;
   --option-secondary-btn-outline: on;
-  --option-neutral-btn-outline: on;
   --btn-padding-block: 0.5em;
   --btn-padding-inline: 1.25em;
   --btn-min-width: 8.75rem;
@@ -390,7 +381,7 @@
 }
 /* Feat: Radius Variables */
 :root {
-  --radius: 0px;
+  --radius: 5px;
   --radius-50: 50%;
   --radius-circle: 50vw;
   --radius-none: 0;
@@ -544,7 +535,11 @@
   --blockquote-cite-text-transform: inherit;
   --blockquote-cite-color: currentColor;
 }
-/* Feat: Custom Button Styles (automatic-custom-css.css) */
+
+/* File: automatic-custom-css.css - Version: 4.0.1 - Generated: 2026-09-07 18:14:10 */
+/* Custom Button Styles
+Use in conjunction with custom .btn-- class
+Customize the values below to your liking */
 :root {
   --btn-background: var(--primary);
   --btn-background-hover: var(--primary-hover);
@@ -555,4 +550,4 @@
   --focus-color: var(--primary-light);
   --btn-border-width: var(--btn-border-width);
 }
-
+/* End Custom Button Styles */
