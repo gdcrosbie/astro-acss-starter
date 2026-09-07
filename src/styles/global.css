@@ -7,8 +7,8 @@
 
 :root {
   color-scheme: dark;
-  --background: var(--bg-dark);
-  --surface: color-mix(in oklch, var(--neutral-semi-dark) 40%, var(--bg-dark));
+  --background: var(--bg-ultra-dark);
+  --surface: var(--neutral-dark);
   --surface-raised: var(--neutral-semi-dark);
   --color: var(--text-light);
   --color-muted: var(--text-light-muted);
