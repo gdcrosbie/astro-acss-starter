@@ -1,0 +1,80 @@
+@import "./tokens.css";
+@import "./reset.css";
+
+/* ==========================================================================
+   Dark Theme Enforcement & ACSS Base Resets
+   ========================================================================== */
+
+:root {
+  color-scheme: dark;
+  --background: var(--bg-dark);
+  --surface: var(--bg-dark);
+  --surface-raised: var(--bg-ultra-dark);
+  --color: var(--text-light, #fff);
+  --color-muted: var(--text-light-muted, color-mix(in srgb, var(--white) 80%, transparent));
+  --border-color: var(--border-color-dark);
+  --transition-base: var(--transition, 0.3s ease-in-out);
+}
+
+html {
+  background-color: var(--background);
+  color: var(--color);
+  color-scheme: dark;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--color);
+  font-family: var(--font-body, system-ui, -apple-system, sans-serif);
+  font-size: var(--text-s);
+  line-height: var(--leading-body, 1.6);
+  min-block-size: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Ambient glow using ACSS palette and color-mix */
+body::before {
+  content: "";
+  position: fixed;
+  inset-block-start: -160px;
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  inline-size: min(100vw, 1100px);
+  block-size: 520px;
+  background: radial-gradient(
+    circle,
+    color-mix(in oklch, var(--primary) 20%, transparent) 0%,
+    color-mix(in oklch, var(--accent) 10%, transparent) 45%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: var(--z-below, -1);
+}
+
+/* ==========================================================================
+   Layout Utilities (CSS Logical Properties & ACSS Tokens)
+   ========================================================================== */
+
+.l-container {
+  inline-size: 100%;
+  max-inline-size: var(--content-width, 85.375rem);
+  margin-inline: auto;
+  padding-inline: var(--gutter, 1.5rem);
+  box-sizing: border-box;
+}
+
+.l-container--narrow {
+  max-inline-size: 800px;
+}
+
+.l-section {
+  padding-block: var(--section-space-m, var(--space-xxl));
+  position: relative;
+  inline-size: 100%;
+}
+
+.l-section--bordered {
+  border-block-start: 1px solid var(--border-color, var(--border-color-dark));
+}
