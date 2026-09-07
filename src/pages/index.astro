@@ -37,21 +37,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <article class="c-card">
             <h3 class="c-card__title">Verified ACSS 4.x Scale</h3>
             <p class="c-card__body">
-              Pure fluid variables spanning `--space-xs` through `--space-xxl` with responsive bridge pairs (`--space-xl-to-m`).
+              Pure fluid variables spanning <code>--space-xs</code> through <code>--space-xxl</code> with responsive bridge pairs (<code>--space-xl-to-m</code>).
             </p>
           </article>
 
           <article class="c-card">
             <h3 class="c-card__title">Strict BEM Architecture</h3>
             <p class="c-card__body">
-              Every component uses isolated, scoped BEM selectors (`.c-block__element--modifier`) referencing design tokens via custom properties.
+              Every component uses isolated, scoped BEM selectors (<code>.c-block__element--modifier</code>) referencing design tokens via custom properties.
             </p>
           </article>
 
           <article class="c-card">
             <h3 class="c-card__title">CSS Logical Properties</h3>
             <p class="c-card__body">
-              Flow-relative dimensions (`padding-block`, `margin-inline`, `max-inline-size`, `inset-block-start`) authored throughout.
+              Flow-relative dimensions (<code>padding-block</code>, <code>margin-inline</code>, <code>max-inline-size</code>, <code>inset-block-start</code>) authored throughout.
             </p>
           </article>
         </div>
@@ -70,23 +70,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   .c-hero__badge {
     display: inline-block;
-    font-family: var(--font-mono, monospace);
+    font-family: var(--font-mono);
     font-size: var(--text-xs);
-    font-weight: 600;
-    color: var(--primary);
-    background-color: color-mix(in oklch, var(--primary) 15%, transparent);
-    border: 1px solid color-mix(in oklch, var(--primary) 30%, transparent);
+    font-weight: 500;
+    color: var(--accent);
+    background-color: color-mix(in oklch, var(--white) 4%, transparent);
+    border: 1px solid var(--border-color-dark);
     padding-block: 0.35em;
     padding-inline: 0.85em;
     border-radius: var(--radius-50, 50px);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     margin-block-end: var(--space-m);
   }
 
   .c-hero__title {
+    font-family: var(--font-heading);
     font-size: clamp(2.2rem, 5vw, var(--text-xxl));
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: var(--heading-letter-spacing, -0.025em);
     line-height: var(--heading-line-height, 1.15);
     color: var(--color);
     margin-block-end: var(--space-m);
@@ -94,10 +96,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
 
   .c-hero__highlight {
-    color: var(--primary);
+    color: var(--text-light-muted);
   }
 
   .c-hero__lead {
+    font-family: var(--font-body);
     font-size: var(--text-m);
     color: var(--color-muted);
     line-height: var(--text-line-height, 1.6);
@@ -118,8 +121,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     justify-content: center;
     padding-block: 0.6em;
     padding-inline: 1.4em;
+    font-family: var(--font-body);
     font-size: var(--text-s);
-    font-weight: 600;
+    font-weight: 500;
     border-radius: var(--radius);
     transition: var(--transition);
     text-decoration: none;
@@ -130,28 +134,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   .c-btn--primary {
     background-color: var(--primary);
-    color: var(--primary-ultra-light);
+    color: var(--bg-ultra-dark);
     border: 1px solid var(--primary);
-    box-shadow: var(--box-shadow-1);
+    box-shadow: 0 1px 2px color-mix(in oklch, var(--black) 30%, transparent);
   }
 
   .c-btn--primary:hover {
     background-color: var(--primary-hover);
     border-color: var(--primary-hover);
-    color: var(--primary-ultra-light);
+    color: var(--bg-ultra-dark);
     transform: translateY(-1px);
   }
 
   .c-btn--secondary {
-    background-color: var(--surface-raised);
+    background-color: color-mix(in oklch, var(--white) 3%, transparent);
     color: var(--color);
     border: 1px solid var(--border-color-dark);
-    box-shadow: var(--box-shadow-1);
   }
 
   .c-btn--secondary:hover {
-    border-color: var(--primary);
-    color: var(--primary);
+    background-color: color-mix(in oklch, var(--white) 8%, transparent);
+    border-color: color-mix(in oklch, var(--white) 25%, transparent);
+    color: var(--color);
     transform: translateY(-1px);
   }
 
@@ -163,18 +167,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   .c-features__label {
     display: inline-block;
-    font-family: var(--font-mono, monospace);
+    font-family: var(--font-mono);
     font-size: var(--text-xs);
-    font-weight: 600;
+    font-weight: 500;
     color: var(--accent);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     margin-block-end: var(--space-xs);
   }
 
   .c-features__title {
+    font-family: var(--font-heading);
     font-size: var(--h2);
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: var(--heading-letter-spacing, -0.025em);
     line-height: var(--heading-line-height, 1.2);
     color: var(--color);
   }
@@ -191,26 +197,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     border: 1px solid var(--border-color-dark);
     border-radius: var(--radius);
     padding: var(--space-l);
-    box-shadow: var(--box-shadow-1);
+    box-shadow: none;
     transition: var(--transition);
   }
 
   .c-card:hover {
-    border-color: color-mix(in oklch, var(--white) 30%, transparent);
-    box-shadow: var(--box-shadow-2);
+    border-color: color-mix(in oklch, var(--white) 25%, transparent);
+    background-color: color-mix(in oklch, var(--surface) 85%, var(--white));
     transform: translateY(-2px);
   }
 
   .c-card__title {
+    font-family: var(--font-heading);
     font-size: var(--h3);
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: -0.015em;
     color: var(--color);
     margin-block-end: var(--space-xs);
   }
 
   .c-card__body {
+    font-family: var(--font-body);
     font-size: var(--text-s);
     color: var(--color-muted);
-    line-height: 1.6;
+    line-height: 1.65;
   }
 </style>
